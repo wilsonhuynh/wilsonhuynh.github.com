@@ -68,7 +68,14 @@ window.onkeyup = function(e) {
 
 //-- remove all javascript events handlers --//
 wh.removeAllEventHandlers = function(){	
-	$(document).off().find("*").off();	
+	//$(document).off().find("*").off();	
+	var body = document.getElementsByTagName('body')[0];
+	var new_body = body.cloneNode(true);
+	body.parentNode.replaceChild(new_body, body);
+
+	window.addEventListener('click', function (event) {
+		event.stopPropagation();
+	}, true);
 }
 
 //-- copy current page content in new tab --//

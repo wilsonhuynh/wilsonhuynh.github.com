@@ -39,7 +39,7 @@
 		else{
 			addStyle('https://wilsonhuynh.github.io/css/common.css');
 			addScript('//cdnjs.cloudflare.com/ajax/libs/Base64/0.3.0/base64.js');
-			addScript('https://wilsonhuynh.github.io/js/common.js?v=0.1');
+			addScript('https://wilsonhuynh.github.io/js/common.js?v=0.2');
 		}
 	}
 
