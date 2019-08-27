@@ -1,0 +1,70 @@
+/* additional style */
+#aside, #adsensediv, #top-adsholder {
+	display: none;
+}
+
+#custom-toolbar {
+	display: none;
+	color: #fff;
+	background: #333;
+	list-style: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 10px;	
+	z-index: 1000;
+	
+}
+
+#custom-toolbar a, #custom-toolbar a:link, #custom-toolbar a:visited { color: #fff; }
+
+#custom-toolbar li {
+	line-height: 20px;
+}
+
+log {
+	color: red;
+	cursor: pointer;
+}
+
+
+/* responsive design */
+.responsive .top-header #header-content:after, .responsive .top-header #header:after, #logo:after {
+		position: fixed;		
+		color: yellow;
+		font-size: 20px;
+		top: 6px;
+		left: 6px;		
+	}   
+
+@media only screen and (max-width: 568px) {
+	.responsive .top-header #header-content:after, .responsive .top-header #header:after, #logo:after {
+		content: "mobile - portrait";						
+	}   
+}
+
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+	.responsive .top-header #header-content:after, .responsive .top-header #header:after, #logo:after {
+		content: "mobile - landscape";				
+	}   
+}
+	
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+	.responsive .top-header #header-content:after, .responsive .top-header #header:after, #logo:after {
+		content: "tablet";		
+	}   
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.responsive .top-header #header-content:after, .responsive .top-header #header:after, #logo:after {
+		content: "Desktop";		
+	}   
+}
+
+@media only screen and (min-width: 1200px) {
+	.responsive .top-header #header-content:after, .responsive .top-header #header:after, #logo:after {
+		content: "Full Desktop";		
+		
+	}
+}
